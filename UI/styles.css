@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.poll-section, .chat-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+}
+
+.poll-section h2, .chat-section h2 {
+  border-bottom: 2px solid #f4f4f9;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.poll {
+  margin-bottom: 20px;
+}
+
+.poll button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.poll button:hover {
+  background-color: #0056b3;
+}
+
+.chat-messages {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.message {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+}
+
+.message span {
+  flex: 1;
+}
+
+.message button {
+  margin-left: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 12px; /* Make the font size smaller */
+  width: auto; /* Let the width be determined by the content */
+}
+
+.message button.update {
+  background-color: #28a745; /* Green for update */
+}
+
+.message button.update:hover {
+  background-color: #218838;
+}
+
+.message button.delete {
+  background-color: #dc3545; /* Red for delete */
+}
+
+.message button.delete:hover {
+  background-color: #c82333;
+}
+
+#typingIndicator {
+  font-style: italic;
+  color: #888;
+}
+
+input[type="text"], button {
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: calc(100% - 22px);
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#sendButton {
+  width: auto;
+  background-color: #007bff;
+  margin-left: 10px;
+}
+
+#sendButton:hover {
+  background-color: #0056b3;
+}
